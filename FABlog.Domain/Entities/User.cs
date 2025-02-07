@@ -9,12 +9,12 @@ public class User
     /// The User ID.
     /// </summary>
     public required Guid UserID { get; set; }
-    
+
     /// <summary>
     /// The user name.
     /// </summary>
     public required string UserName { get; set; }
-    
+
     /// <summary>
     /// The user email.
     /// </summary>

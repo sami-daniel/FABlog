@@ -1,9 +1,8 @@
 ﻿using FABlog.Domain.Entities;
 using FABlog.Domain.Repository.Core;
 
-namespace FABlog.Domain.Repository.Specialized
+namespace FABlog.Domain.Repository.Specialized;
+
+public interface IUserRepository : IRepository<User>
 {
-    public interface IUserRepository : IRepository<User>
-    {
-    }
 }
