@@ -4,24 +4,12 @@ namespace FABlog.Domain.Repository.Core
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {
-        public virtual void Delete(Guid entityID)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Delete(Guid entityID);
 
-        public virtual Result<T> GetEntity(Guid entityID)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Result<T> GetEntity(Guid entityID);
 
-        public virtual Task<Result<T>> GetEntityAsync(Guid entityID)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Task<Result<T>> GetEntityAsync(Guid entityID);
 
-        public virtual void Update(Guid entityID, T newlyEntityData)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Update(Guid entityID, T newlyEntityData);
     }
 }
