@@ -1,0 +1,6 @@
+# Ignore compilation result folders
+**/obj
+**/bin
+
+# Ignore IDE specific files
+**/.vs
